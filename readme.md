@@ -1,8 +1,10 @@
-# Hélène Ta
+# Helene Ta Portfolio
 <table>
 	<tr>
 		<td>
 			Welcome, I am a french web student and this is my online portfolio.
+
+			Visit it here : http://www.heleneta.com
 		</td>
 	</tr>
 </table>
@@ -14,7 +16,7 @@
 
 ### Bug
 
-If you find a bug , open an issue [here](https://github.com/Thaelene/portfolio-heleneta/issues.
+If you find a bug , open an issue [here](https://github.com/Thaelene/portfolio-heleneta/issues).
 
 ## Built with
 
