@@ -5,11 +5,9 @@ body{
 }
 a{
     text-decoration: none;
-    color: #000;
+    color: $black;
 }
-.adress-mail{
-    color: #000;
-}
+
 //Animation filling links with $pink
 .link-decoration{
     outline: none;
@@ -79,15 +77,13 @@ a{
     background: #fefefe;
 
     h1{
-        font-family: 'nexa-bold';
-        font-size: 48px;
         color : $grey;
         text-align: center;
         outline: none;
     	text-decoration: none;
     	position: relative;
     	display: inline-block;
-        letter-spacing: 6px;
+        margin-bottom: 5%;
 
         &:before{
             content: attr(data-letters);
@@ -146,9 +142,31 @@ a{
     }
 }
 
+//Right side
 .right-side{
     background: #fafafa;
     -webkit-box-shadow: -10px 0px 5px -5px rgba(224,221,224,1);
     -moz-box-shadow: -10px 0px 5px -5px rgba(224,221,224,1);
     box-shadow: -10px 0px 5px -5px rgba(224,221,224,1);
+
+    h2{
+        color: $black;
+    }
+    .category{
+        margin-bottom: 10%;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    ul{
+        li{
+            p, a{
+                display: inline-block;
+            }
+            p{
+                line-height: 36px;
+            }
+        }
+    }
 }

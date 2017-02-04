@@ -14,7 +14,7 @@
 
 ### Bug
 
-If you find a bug , open an issue [here](https://github.com/thaelene/helenta/issues).
+If you find a bug , open an issue [here](https://github.com/Thaelene/portfolio-heleneta/issues.
 
 ## Built with
 
