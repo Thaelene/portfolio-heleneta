@@ -1,7 +1,10 @@
 @import '_fonts.scss';
+@import '_header.scss';
+@import '_about.scss';
 body{
     font-family: 'nexa-light';
     color: $grey;
+    font-size: 24px;
 }
 a{
     text-decoration: underline;
@@ -70,7 +73,6 @@ HOMEPAGE
     align-items: center;
     flex: 1 50%;
     height: 100vh;
-    font-size: 24px;
 }
 .homepage-menu{
     display: none;
