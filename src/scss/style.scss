@@ -4,7 +4,7 @@ body{
     color: $grey;
 }
 a{
-    text-decoration: none;
+    text-decoration: underline;
     color: $black;
 }
 
@@ -49,6 +49,12 @@ a{
 
 }
 
+/******************
+
+HOMEPAGE
+
+*******************/
+
 .wrapper{
     font-size: 0;
     display: flex;
@@ -66,9 +72,32 @@ a{
     height: 100vh;
     font-size: 24px;
 }
+.homepage-menu{
+    display: none;
+}
+
 @media only screen  and (max-device-width : 667px) and (orientation : portrait){
     .left-side, .right-side{
         font-size: 18px;
+    }
+    nav.homepage-menu{
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        margin-top: 5%;
+        padding: 0 10%;
+
+        p{
+            margin: 0;
+        }
+
+    }
+    .about{
+        display: none;
     }
 }
 
@@ -148,6 +177,7 @@ a{
     -webkit-box-shadow: -10px 0px 5px -5px rgba(224,221,224,1);
     -moz-box-shadow: -10px 0px 5px -5px rgba(224,221,224,1);
     box-shadow: -10px 0px 5px -5px rgba(224,221,224,1);
+    position: relative;
 
     h2{
         color: $black;
