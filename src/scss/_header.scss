@@ -6,7 +6,7 @@ header{
         display: flex;
         width: 50%;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
 
         .logo-title{
@@ -22,6 +22,10 @@ header{
                 top: 0;
                 left: 105%;
             }
+        }
+
+        span{
+            margin-left: 30px;
         }
     }
 

@@ -11,6 +11,11 @@ a{
     text-decoration: underline;
     color: $black;
 }
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
 
 //Animation filling links with $pink
 .link-decoration{
@@ -27,6 +32,7 @@ a{
 	color: $pink;
 	white-space: nowrap;
 	width: 0%;
+    will-change: width;
 	transition: width 0.4s 0.3s;
     }
 
@@ -39,6 +45,7 @@ a{
         background: $pink;
         bottom: 2px;
         left: 0;
+        will-change: width;
         transition: width 0.4s 0.3s;
     }
 
@@ -65,16 +72,17 @@ HOMEPAGE
     flex-flow: row wrap;
     align-items: center;
 }
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
 .left-side, .right-side{
     display: flex;
     align-items: center;
     flex: 1 50%;
     height: 100vh;
     font-size: 24px;
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 .homepage-menu{
     display: none;
@@ -175,7 +183,7 @@ HOMEPAGE
     }
 }
 
-//Right side
+/****** RIGHT SIDE ******/
 .right-side{
     background: #fbfbfb;
     position: relative;
@@ -199,5 +207,17 @@ HOMEPAGE
                 line-height: 36px;
             }
         }
+    }
+}
+
+
+/****** PROJECTS SECTION ******/
+.projects-section{
+    .left-side, .right-side{
+        display: flex;
+        align-items: center;
+        flex: 1 50%;
+        height: 80vh;
+        font-size: 24px;
     }
 }
