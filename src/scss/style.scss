@@ -161,6 +161,10 @@ HOMEPAGE
             display: inline-block;
         }
     }
+
+    .homepage-left-side-text-underline{
+        color: $pink;
+    }
 }
 
 @media only screen  and (max-device-width : 667px) and (orientation : portrait){
@@ -245,11 +249,26 @@ HOMEPAGE
 }
 /****** PROJECTS SECTION ******/
 .projects-section{
-    .left-side, .right-side{
-        display: flex;
-        align-items: center;
-        flex: 1 50%;
-        height: 80vh;
-        font-size: 24px;
+    position: relative;
+    height: 100vh;
+
+    .wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        background-image: url(../img/elodie-cottin-homepage.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+    }
+
+}
+@media only screen  and (max-device-width : 1024px) {
+    .projects-section{
+        display: none;
     }
 }
