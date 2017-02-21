@@ -71,6 +71,7 @@ HOMEPAGE
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    position: relative;
 }
 .left-side, .right-side{
     display: flex;
@@ -210,7 +211,38 @@ HOMEPAGE
     }
 }
 
+/****** SCROLL ICON ******/
+.scroll-icon{
+    position: absolute;
+    bottom: 2%;
+    left: calc(50% - 1em);
+    display: flex;
+    height: 60px;
+    flex-flow: column nowrap;
+    align-items: center;
 
+    .scroll-icon-text{
+        font-size: 0.8em;
+    }
+
+    .scroll-icon-bar{
+        width: 2px;
+        height: 35px;
+        background: $pink;
+        will-change: transform;
+        animation: scroll-fill 1.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes scroll-fill {
+    from {height: 0px;}
+    to {height: 50px;}
+}
+
+@keyframes scroll-fill {
+    from {height: 0px;}
+    to {height: 50px;}
+}
 /****** PROJECTS SECTION ******/
 .projects-section{
     .left-side, .right-side{
