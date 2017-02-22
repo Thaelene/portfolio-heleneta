@@ -253,22 +253,51 @@ HOMEPAGE
     height: 100vh;
 
     .wrapper{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -2;
-        background-image: url(../img/elodie-cottin-homepage.png);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        opacity: 0.4;
+
+        .projects-section-background-image{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80vh;
+            z-index: -2;
+            background-image: url(../img/elodie-cottin-homepage.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            filter: opacity(0.4);
+        }
+
+        .projects-section-left-side, .projects-section-right-side{
+            display: flex;
+            height: 50vh;
+            flex-flow: row wrap;
+            width: 50%;
+            align-items: center;
+
+            .container{
+                width: 80%;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
     }
 
 }
 @media only screen  and (max-device-width : 1024px) {
     .projects-section{
         display: none;
+    }
+}
+
+/** PROJECTS SECTION - Left side**/
+.projects-section-left-side{
+    h2{
+        color: $black;
+        margin-bottom: 5%;
+    }
+    p{
+
     }
 }
