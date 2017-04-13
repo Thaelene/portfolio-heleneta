@@ -18,6 +18,7 @@ a{
 .inner-container{
     width: 70%;
     margin: 0 auto;
+    height: 100%;
 }
 
 
@@ -65,32 +66,45 @@ a{
 
 /******************
 
-HOMEPAGE
+PROJECTS SECTION
 
 *******************/
-
-.wrapper{
-    font-size: 0;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    position: relative;
+#homepage-projects{
+    margin: 2em 0;
+    height: 400px;
 }
-.left-side, .right-side{
+.projects-wrapper{
     display: flex;
-    align-items: center;
-    flex: 1 50%;
-    height: 100vh;
-    font-size: 24px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
 
-    .container{
-        width: 80%;
-        margin: 0 auto;
+    .projects-list{
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        ul{
+            li{
+                padding-bottom: 2em;
+            }
+        }
+    }
+
+    .projects-thumbnails{
+        background-image: url(../img/charlotte-domingos.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 57%;
+        height: 60%;
+        transition: background 0.5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+        box-shadow: 1px 3px 20px -2px rgb(34, 32, 34);
     }
 }
-.homepage-menu{
-    display: none;
-}
+
 
 @media only screen  and (max-device-width : 667px) and (orientation : portrait){
     .left-side, .right-side{
