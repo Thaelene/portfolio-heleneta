@@ -4,15 +4,19 @@
 @import '_personal-projects.scss';
 body{
     font-family: 'nexa-light';
-    color: $grey;
+    color: $primary-color;
     font-size: 24px;
 }
 a{
-    text-decoration: underline;
-    color: $black;
+    text-decoration: none;
+    color: $link-color;
 }
 .container{
     width: 90%;
+    margin: 0 auto;
+}
+.inner-container{
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -29,7 +33,7 @@ a{
 	position: absolute;
 	z-index: 2;
 	overflow: hidden;
-	color: $pink;
+	color: $title-color;
 	white-space: nowrap;
 	width: 0%;
     will-change: width;
@@ -42,7 +46,7 @@ a{
         width: 0%;
         height: 2px;
         z-index: 7;
-        background: $pink;
+        background: $title-color;
         bottom: 2px;
         left: 0;
         will-change: width;
@@ -119,7 +123,7 @@ HOMEPAGE
     background: #fefefe;
 
     h1{
-        color : $grey;
+        color : $primary-color;
         text-align: center;
         outline: none;
     	text-decoration: none;
@@ -132,7 +136,7 @@ HOMEPAGE
         	position: absolute;
         	z-index: 2;
         	overflow: hidden;
-        	color: $pink;
+        	color: $title-color;
         	white-space: nowrap;
         	width: 100%;
         	transition: width 1.2s 1s;
@@ -140,7 +144,7 @@ HOMEPAGE
     }
     @media only screen  and (max-device-width : 1024px) {
         h1{
-            color: $pink;
+            color: $title-color;
         }
         h1::before{
             display: none;
@@ -163,7 +167,7 @@ HOMEPAGE
     }
 
     .homepage-left-side-text-underline{
-        color: $pink;
+        color: $title-color;
     }
 }
 
@@ -175,7 +179,7 @@ HOMEPAGE
         order : 1;
 
         h1{
-            color: $pink;
+            color: $title-color;
         }
 
         p, span{
@@ -194,7 +198,7 @@ HOMEPAGE
     position: relative;
 
     h2{
-        color: $black;
+        color: $link-color;
     }
     .category{
         margin-bottom: 10%;
@@ -232,7 +236,7 @@ HOMEPAGE
     .scroll-icon-bar{
         width: 2px;
         height: 35px;
-        background: $pink;
+        background: $title-color;
         will-change: transform;
         animation: scroll-fill 1.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
     }
@@ -294,7 +298,7 @@ HOMEPAGE
 /** PROJECTS SECTION - Left side**/
 .projects-section-left-side{
     h2{
-        color: $black;
+        color: $link-color;
         margin-bottom: 5%;
     }
     p{

@@ -77,8 +77,8 @@ gulp.task( 'javascript', function()
             errorHandler: gulp_notify.onError("JS Error: <%= error.message %>")
         }))
         .pipe(gulp_sourcemaps.init())
-        .pipe( gulp_concat( 'main.min.js' ) )
         .pipe( gulp_uglify() )
+        .pipe( gulp_concat( 'main.min.js' ) )
         .pipe(gulp_sourcemaps.write())
         .pipe( gulp.dest(config.assets + 'js' ) );
 } );

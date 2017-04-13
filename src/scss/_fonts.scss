@@ -7,9 +7,9 @@
     src: url(../fonts/Nexa_Light.otf);
 }
 
-$pink: #DB0A5B;
-$grey: #7A797A;
-$black : #390318;
+$title-color: #DB0A5B;
+$primary-color: #7A797A;
+$link-color : #390318;
 
 //font styles
 .title{
@@ -22,15 +22,11 @@ $black : #390318;
 .logo-title{
     font-family: 'nexa-bold';
     letter-spacing: 5.5px;
-    color: $black;
+    color: $link-color;
     text-decoration: none;
 }
 @media only screen  and (max-device-width : 1024px) {
     .logo-title{
         letter-spacing: 1.5px;
     }
-}
-
-.adress-mail{
-    color: $black;
 }
