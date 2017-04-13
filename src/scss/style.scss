@@ -16,15 +16,14 @@ a{
     margin: 0 auto;
 }
 .inner-container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
 
-//Animation filling links with $pink
+//Animation filling links with $title-color
 .link-decoration{
     outline: none;
-    text-decoration: underline;
 	position: relative;
 	display: inline-block;
 
@@ -47,7 +46,7 @@ a{
         height: 2px;
         z-index: 7;
         background: $title-color;
-        bottom: 2px;
+        bottom: 1px;
         left: 0;
         will-change: width;
         transition: width 0.4s 0.3s;
