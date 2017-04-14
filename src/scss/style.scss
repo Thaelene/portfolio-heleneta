@@ -19,12 +19,12 @@ a{
 
     // 4K responsive
     @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
     font-size: 2em;
     }
 }
@@ -32,6 +32,11 @@ a{
     width: 70%;
     margin: 0 auto;
     height: 100%;
+
+    // tablet, landscape iPad, lo-res laptops ands desktops
+    @media (min-width:40.063em) {
+        width: 80%;
+    }
 }
 
 
@@ -99,12 +104,12 @@ a{
 
     // 4K responsive
     @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
         font-size: 0.4em;
     }
 }
@@ -120,13 +125,20 @@ PROJECTS SECTION
 
     // 4K responsive
     @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
         margin: 2em 0;
+        height: 15em;
+    }
+
+    // Medium screen min-width 641px and max-width 1024px
+    // such as Tablets
+    @media only screen and (min-width:40.063em) and (max-width:64em){
+        margin: 1em 0;
         height: 15em;
     }
 }
@@ -136,14 +148,21 @@ PROJECTS SECTION
 
     // 4K responsive
     @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
         margin: 2em 0;
         height: 18em;
+    }
+
+    // Medium screen min-width 641px and max-width 1024px
+    // such as Tablets
+    @media only screen and (min-width:40.063em) and (max-width:64em){
+        margin: 1em 0;
+        height: 22em;
     }
 }
 #homepage-lab{
@@ -152,12 +171,12 @@ PROJECTS SECTION
 
     // 4K responsive
     @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
         margin: 2em 0;
         height: 7em;
     }
@@ -184,13 +203,19 @@ PROJECTS SECTION
 
             // 4K responsive
             @media
-            only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-            only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-            only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-            only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-            only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-            only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+            only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+            only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+            only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+            only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+            only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+            only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
                 padding-bottom: 1.5em;
+            }
+
+            // Medium screen min-width 641px and max-width 1024px
+            // such as Tablets
+            @media only screen and (min-width:40.063em) and (max-width:64em){
+                padding-bottom: 1em;
             }
         }
     }
@@ -205,13 +230,18 @@ PROJECTS SECTION
 
     // 4K responsive
     @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
         height: 16em;
+    }
+    // Medium screen min-width 641px and max-width 1024px
+    // such as Tablets
+    @media only screen and (min-width:40.063em) and (max-width:64em){
+        height: 20em;
     }
 
     .illustrations-thumbnails{
@@ -221,13 +251,19 @@ PROJECTS SECTION
 
         // 4K responsive
         @media
-        only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-        only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-        only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-        only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-        only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-        only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+        only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+        only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+        only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
             height: 13em;
+        }
+
+        // Medium screen min-width 641px and max-width 1024px
+        // such as Tablets
+        @media only screen and (min-width:40.063em) and (max-width:64em){
+            height: 16em;
         }
     }
 }
@@ -251,6 +287,13 @@ PROJECTS SECTION
     height: 60%;
     transition: background 0.5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
     box-shadow: 1px 3px 20px -2px rgb(34, 32, 34);
+
+    // Medium screen min-width 641px and max-width 1024px
+    // such as Tablets
+    @media only screen and (min-width:40.063em) and (max-width:64em){
+        width: 54%;
+        height: 44%;
+    }
 }
 
 // Lab section
@@ -268,12 +311,12 @@ PROJECTS SECTION
 
                 // 4K responsive
                 @media
-                only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-                only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-                only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-                only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-                only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-                only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+                only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+                only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+                only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+                only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+                only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+                only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
                     font-size: 0.5em;
                 }
             }
@@ -310,12 +353,12 @@ footer{
 
     // 4K responsive
     @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
         font-size: 0.5em;
     }
 }

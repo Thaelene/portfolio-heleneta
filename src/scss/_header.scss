@@ -29,15 +29,15 @@ header{
 
 // 4K responsive
 @media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
-only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
-only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
 
   header{
-      padding: 2em 0;
+      padding: 1.6em 0;
       nav{
           a.logo{
               font-size: 1.5em;
@@ -48,6 +48,36 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 80.063e
               }
           }
       }
-  }
+    }
+}
 
+// Large desktop
+// @media (min-width:64.063em) {
+//     header{
+//         padding: 2em 0;
+//         nav{
+//             a.logo{
+//                 font-size: 1em;
+//             }
+//             ul{
+//                 li{
+//                     font-size: 0.5em;
+//                 }
+//             }
+//         }
+//       }
+// }
+
+// Medium screen min-width 641px and max-width 1024px
+// such as Tablets
+@media only screen and (min-width:40.063em) and (max-width:64em){
+    header{
+        nav{
+            ul{
+                li{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
 }
