@@ -20,6 +20,7 @@ a{
     color: $link-color;
 }
 .container{
+    display: none;
     width: 90%;
     margin: 0 auto;
 
@@ -85,7 +86,6 @@ a{
             width: 100%;
         }
     }
-
 }
 
 .homepage-subtitle{
@@ -439,35 +439,61 @@ footer{
 }
 
 
-/****** SCROLL ICON ******/
-.scroll-icon{
+.loader{
     position: absolute;
-    bottom: 2%;
-    left: calc(50% - 1em);
-    display: flex;
-    height: 60px;
-    flex-flow: column nowrap;
-    align-items: center;
+    top: 50%;
+    left: 50%;
+}
+.loader-content{
+    outline: none;
+	position: relative;
+	display: inline-block;
+    opacity: 0;
+    will-change: opacity;
+    animation: fade_out 2.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
 
-    .scroll-icon-text{
-        font-size: 0.8em;
+    &:before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: $title-color;
+	white-space: nowrap;
+	width: 0%;
+    will-change: width;
+	animation: fill_in 2.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
     }
 
-    .scroll-icon-bar{
-        width: 2px;
-        height: 35px;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 0.2rem;
+        z-index: 7;
         background: $title-color;
-        will-change: transform;
-        animation: scroll-fill 1.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+        bottom: 0px;
+        left: 0;
+        will-change: width;
+        animation: fill_in 2.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
     }
+}
+@keyframes fill_in {
+    from { width: 0px;}
+    to { width: 100%;}
 }
 /* Chrome, Safari, Opera */
-@-webkit-keyframes scroll-fill {
-    from {height: 0px;}
-    to {height: 50px;}
+@-webkit-keyframes fill_in {
+    from { width: 0px;}
+    to { width: 100%;}
 }
-
-@keyframes scroll-fill {
-    from {height: 0px;}
-    to {height: 50px;}
+@keyframes fade_out {
+    0% { opacity: 0;}
+    80% { opacity: 1;}
+    100% { opacity: 0.7;}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fade_out {
+    0% { opacity: 0;}
+    90% { opacity: 1;}
+    100% { opacity: 0.9;}
 }

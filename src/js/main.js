@@ -1,3 +1,14 @@
+// Show content when DOM content is loaded
+var loader = document.querySelector('.loader');
+var content = document.querySelector('.container');
+document.addEventListener("DOMContentLoaded", function(event)
+{
+    loader.style.display = "none";
+    content.style.display = "block";
+    console.log('hi');
+});
+
+// Changing thumbnail when hover on projects links
 var projects = {};
 projects.element = {};
 projects.element.charlotte = document.querySelector('.charlotte-domingos');
@@ -28,6 +39,7 @@ projects.element.tales.addEventListener('mouseover', function()
     projects.element.thumbnail.style.backgroundImage = "url(assets/img/tales.png)";
 })
 
+// Changing thumbnail when hover on illustrations links
 var illustrations = {};
 illustrations.element = {};
 illustrations.element.chinese = document.querySelector('.mandala');
