@@ -1,11 +1,13 @@
 @import '_fonts.scss';
 @import '_header.scss';
 @import '_about.scss';
-@import '_personal-projects.scss';
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: 'nexa-light';
     color: $primary-color;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 a{
     text-decoration: none;
@@ -14,6 +16,17 @@ a{
 .container{
     width: 90%;
     margin: 0 auto;
+
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+    font-size: 2em;
+    }
 }
 .inner-container{
     width: 70%;
@@ -44,7 +57,7 @@ a{
         content: "";
         position: absolute;
         width: 0%;
-        height: 2px;
+        height: 0.2rem;
         z-index: 7;
         background: $title-color;
         bottom: 0px;
@@ -65,10 +78,10 @@ a{
 }
 
 .homepage-subtitle{
-    font-size: 12px;
+    font-size: 1.2rem;
     color: $title-color;
-    letter-spacing: 2px;
-    margin: 2em 0;
+    letter-spacing: 0.2rem;
+    margin: 2rem 0;
     position: relative;
     display: inline-block;
     font-family: 'nexa-bold';
@@ -77,11 +90,22 @@ a{
         content: "";
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 0.2rem;
         z-index: 7;
         background: $title-color;
-        bottom: -3px;
+        bottom: -0.3rem;
         left: 0;
+    }
+
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+        font-size: 0.4em;
     }
 }
 
@@ -91,16 +115,52 @@ PROJECTS SECTION
 
 *******************/
 #homepage-projects{
-    margin: 4em 0;
-    height: 400px;
+    margin: 5rem 0;
+    height: 40rem;
+
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+        margin: 2em 0;
+        height: 15em;
+    }
 }
 #homepage-illustrations{
-    margin: 4em 0;
-    height: 600px;
+    margin: 5rem 0;
+    height: 60rem;
+
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+        margin: 2em 0;
+        height: 18em;
+    }
 }
 #homepage-lab{
-    margin: 4em 0;
-    height: 220px;
+    margin: 5rem 0;
+    height: 22rem;
+
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+        margin: 2em 0;
+        height: 7em;
+    }
 }
 
 // Projects section
@@ -110,6 +170,7 @@ PROJECTS SECTION
     justify-content: flex-end;
     align-items: flex-start;
     height: 100%;
+    margin-top: 2rem;
 }
 .projects-list{
     margin-right: auto;
@@ -119,7 +180,18 @@ PROJECTS SECTION
 
     ul{
         li{
-            padding-bottom: 2em;
+            padding-bottom: 5rem;
+
+            // 4K responsive
+            @media
+            only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+            only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+            only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+            only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+            only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+            only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+                padding-bottom: 1.5em;
+            }
         }
     }
 }
@@ -128,21 +200,44 @@ PROJECTS SECTION
 .illustrations-wrapper{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 50rem;
     justify-content: space-around;
+
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+        height: 16em;
+    }
 
     .illustrations-thumbnails{
         width: 100%;
-        height: 400px;
+        height: 40rem;
         background-image: url(../img/chinese-mandala.png);
+
+        // 4K responsive
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+        only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+        only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+        only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+        only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+        only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+            height: 13em;
+        }
     }
 }
 .illustrations-list{
     align-self: stretch;
     ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        li{
+            display: inline-block;
+            padding-right: 5rem;
+        }
     }
 }
 
@@ -162,14 +257,25 @@ PROJECTS SECTION
 #homepage-lab{
     .lab-content{
         div{
-            margin: 1em 0;
+            margin: 3rem 0;
 
             a{
                 color: $link-color;
             }
             p{
                 font-size: 18px;
-                margin: 0.5em 0;
+                margin: 1.5rem 0;
+
+                // 4K responsive
+                @media
+                only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+                only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+                only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+                only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+                only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+                only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+                    font-size: 0.5em;
+                }
             }
         }
     }
@@ -177,16 +283,16 @@ PROJECTS SECTION
 
 // Footer
 footer{
-    margin: 2em 0;
-    font-size: 18px;
+    margin: 5rem 0;
+    font-size: 1.8rem;
     text-align: center;
 
     p{
-        margin: 1em 0;
+        margin: 1.5rem 0;
     }
 
     span{
-        letter-spacing: 2px;
+        letter-spacing: 0.2rem;
     }
 
     ul{
@@ -196,6 +302,21 @@ footer{
     }
     .seeU{
         font-family: 'nexa-bold';
+    }
+    .credits{
+        font-size: 1rem;
+        font-family: 'nexa-light';
+    }
+
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 80.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 80.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 80.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 80.063em) {
+        font-size: 0.5em;
     }
 }
 
