@@ -340,13 +340,13 @@ PROJECTS SECTION
     background-size: cover;
     background-repeat: no-repeat;
     width: 57%;
-    height: 60%;
+    height: 70%;
     transition: background 0.5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
     box-shadow: 1px 3px 20px -2px rgb(34, 32, 34);
 
     // Medium screen min-width 641px and max-width 1024px
     // such as Tablets
-    @media only screen and (min-width:40.063em) and (max-width:64em){
+    @media only screen and (min-width:40.063em) and (max-width:63.938em){
         width: 54%;
         height: 44%;
     }
