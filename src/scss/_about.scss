@@ -1,0 +1,108 @@
+.active{
+    outline: none;
+	position: relative;
+	display: inline-block;
+
+    &:before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: $title-color;
+	white-space: nowrap;
+	width: 100%;
+    will-change: width;
+	transition: width 0.4s 0.3s;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.2rem;
+        z-index: 7;
+        background: $title-color;
+        bottom: 0px;
+        left: 0;
+        will-change: width;
+        transition: width 0.4s 0.3s;
+    }
+}
+
+.hello-content{
+    margin: 8rem 0;
+    h1{
+        color: $title-color;
+        font-size: 3.2rem;
+        font-family: 'nexa-bold';
+        letter-spacing: 0.2rem;
+        margin: 4rem 0;
+
+        // 4K responsive
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+        only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+        only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+            font-size: 2em;
+        }
+
+        // Small screen max-width 375px
+        // such as small mobile like iphone 6 or samsung galaxy S5
+        @media (max-width:23.438em){
+            margin: 0.4em 0;
+        }
+    }
+    p{
+        margin: 2rem 0;
+        line-height: 3.6rem;
+        font-size: 1.8rem;
+
+        a{
+            line-height: normal;
+        }
+
+        // 4K responsive
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+        only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+        only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+            line-height: 1.5em;
+            font-size: 1em;
+        }
+        // Small screen max-width 375px
+        // such as small mobile like iphone 6 or samsung galaxy S5
+        @media (max-width:23.438em){
+            font-size: 0.8em;
+            line-height: 1.8em;
+        }
+    }
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        margin: 2em 0;
+    }
+    // Small screen max-width 375px
+    // such as small mobile like iphone 6 or samsung galaxy S5
+    @media (max-width:23.438em){
+        margin: 0.2em 0;
+    }
+}
+footer.hello-page{
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+        font-size: 1em;
+    }
+}

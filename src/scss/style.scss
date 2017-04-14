@@ -410,6 +410,13 @@ footer{
     ul{
         li{
             display: inline-block;
+            padding: 0 3rem;
+
+            // Small screen max-width 375px
+            // such as small mobile like iphone 6 or samsung galaxy S5
+            @media (max-width:23.438em){
+                padding: 1rem 0;
+            }
         }
     }
     .seeU{
