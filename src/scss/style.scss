@@ -118,6 +118,14 @@ a{
     only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
         font-size: 0.4em;
     }
+
+    // Small screen max-width 375px
+    // such as small mobile like iphone 6 or samsung galaxy S5
+    @media (max-width:23.438em){
+        font-size: 0.6em;
+        margin: 0.6em 0;
+    }
+
 }
 
 /******************
