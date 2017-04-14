@@ -91,12 +91,16 @@ PROJECTS SECTION
 
 *******************/
 #homepage-projects{
-    margin: 2em 0;
+    margin: 4em 0;
     height: 400px;
 }
 #homepage-illustrations{
-    margin: 2em 0;
+    margin: 4em 0;
     height: 600px;
+}
+#homepage-lab{
+    margin: 4em 0;
+    height: 220px;
 }
 
 // Projects section
@@ -152,6 +156,47 @@ PROJECTS SECTION
     height: 60%;
     transition: background 0.5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
     box-shadow: 1px 3px 20px -2px rgb(34, 32, 34);
+}
+
+// Lab section
+#homepage-lab{
+    .lab-content{
+        div{
+            margin: 1em 0;
+
+            a{
+                color: $link-color;
+            }
+            p{
+                font-size: 18px;
+                margin: 0.5em 0;
+            }
+        }
+    }
+}
+
+// Footer
+footer{
+    margin: 2em 0;
+    font-size: 18px;
+    text-align: center;
+
+    p{
+        margin: 1em 0;
+    }
+
+    span{
+        letter-spacing: 2px;
+    }
+
+    ul{
+        li{
+            display: inline-block;
+        }
+    }
+    .seeU{
+        font-family: 'nexa-bold';
+    }
 }
 
 
