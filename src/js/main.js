@@ -27,3 +27,18 @@ projects.element.tales.addEventListener('mouseover', function()
 {
     projects.element.thumbnail.style.backgroundImage = "url(assets/img/tales.png)";
 })
+
+var illustrations = {};
+illustrations.element = {};
+illustrations.element.chinese = document.querySelector('.mandala');
+illustrations.element.mattepainting = document.querySelector('.mattepainting');
+illustrations.element.thumbnail = document.querySelector('.illustrations-thumbnails');
+
+illustrations.element.chinese.addEventListener('mouseover', function()
+{
+    illustrations.element.thumbnail.style.backgroundImage = "url(assets/img/chinese-mandala.png)";
+})
+illustrations.element.mattepainting.addEventListener('mouseover', function()
+{
+    illustrations.element.thumbnail.style.backgroundImage = "url(assets/img/sci-fi.png)";
+})

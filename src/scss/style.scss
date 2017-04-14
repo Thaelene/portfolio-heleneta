@@ -47,7 +47,7 @@ a{
         height: 2px;
         z-index: 7;
         background: $title-color;
-        bottom: 1px;
+        bottom: 0px;
         left: 0;
         will-change: width;
         transition: width 0.4s 0.3s;
@@ -64,6 +64,27 @@ a{
 
 }
 
+.homepage-subtitle{
+    font-size: 12px;
+    color: $title-color;
+    letter-spacing: 2px;
+    margin: 2em 0;
+    position: relative;
+    display: inline-block;
+    font-family: 'nexa-bold';
+
+    &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        z-index: 7;
+        background: $title-color;
+        bottom: -3px;
+        left: 0;
+    }
+}
+
 /******************
 
 PROJECTS SECTION
@@ -73,164 +94,81 @@ PROJECTS SECTION
     margin: 2em 0;
     height: 400px;
 }
+#homepage-illustrations{
+    margin: 2em 0;
+    height: 600px;
+}
+
+// Projects section
 .projects-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
     height: 100%;
-
-    .projects-list{
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-        ul{
-            li{
-                padding-bottom: 2em;
-            }
-        }
-    }
-
-    .projects-thumbnails{
-        background-image: url(../img/charlotte-domingos.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 57%;
-        height: 60%;
-        transition: background 0.5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
-        box-shadow: 1px 3px 20px -2px rgb(34, 32, 34);
-    }
 }
+.projects-list{
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-
-@media only screen  and (max-device-width : 667px) and (orientation : portrait){
-    .left-side, .right-side{
-        font-size: 18px;
-    }
-    nav.homepage-menu{
-        display: flex;
-        width: 100%;
-        position: absolute;
-        top: 5%;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 18px;
-        margin-top: 5%;
-        padding: 0 10%;
-
-        p{
-            margin: 0;
-        }
-
-    }
-    .about{
-        display: none;
-    }
-}
-
-/****** LEFT SIDE ******/
-.left-side{
-    background: #fefefe;
-
-    h1{
-        color : $primary-color;
-        text-align: center;
-        outline: none;
-    	text-decoration: none;
-    	position: relative;
-    	display: inline-block;
-        margin-bottom: 5%;
-
-        &:before{
-            content: attr(data-letters);
-        	position: absolute;
-        	z-index: 2;
-        	overflow: hidden;
-        	color: $title-color;
-        	white-space: nowrap;
-        	width: 100%;
-        	transition: width 1.2s 1s;
-        }
-    }
-    @media only screen  and (max-device-width : 1024px) {
-        h1{
-            color: $title-color;
-        }
-        h1::before{
-            display: none;
-        }
-    }
-
-    p, span{
-        line-height: 36px;
-        margin: 5% 0;
-    }
-    ul{
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-
-        li{
-            display: inline-block;
-        }
-    }
-
-    .homepage-left-side-text-underline{
-        color: $title-color;
-    }
-}
-
-@media only screen  and (max-device-width : 667px) and (orientation : portrait){
-    .left-side, .right-side{
-        flex: 1 100%;
-    }
-    .left-side{
-        order : 1;
-
-        h1{
-            color: $title-color;
-        }
-
-        p, span{
-            line-height: 30px;
-            margin: 5% 0;
-        }
-    }
-    .right-side{
-        order : 2;
-    }
-}
-
-/****** RIGHT SIDE ******/
-.right-side{
-    background: #fbfbfb;
-    position: relative;
-
-    h2{
-        color: $link-color;
-    }
-    .category{
-        margin-bottom: 10%;
-
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
     ul{
         li{
-            p, a{
-                display: inline-block;
-            }
-            p{
-                line-height: 36px;
-            }
+            padding-bottom: 2em;
         }
     }
 }
+
+// Illustrations section
+.illustrations-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+
+    .illustrations-thumbnails{
+        width: 100%;
+        height: 400px;
+        background-image: url(../img/chinese-mandala.png);
+    }
+}
+.illustrations-list{
+    align-self: stretch;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+// Projects, illustrations and lab Thumbnails
+.projects-thumbnails, .illustrations-thumbnails{
+    background-image: url(../img/charlotte-domingos.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 57%;
+    height: 60%;
+    transition: background 0.5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+    box-shadow: 1px 3px 20px -2px rgb(34, 32, 34);
+}
+
+
+// @media only screen  and (max-device-width : 667px) and (orientation : portrait){
+// }
+//
+//
+//     @media only screen  and (max-device-width : 1024px) {
+//
+//     }
+//
+//
+// }
+//
+// @media only screen  and (max-device-width : 667px) and (orientation : portrait){
+//
+// }
 
 /****** SCROLL ICON ******/
 .scroll-icon{
@@ -263,58 +201,4 @@ PROJECTS SECTION
 @keyframes scroll-fill {
     from {height: 0px;}
     to {height: 50px;}
-}
-/****** PROJECTS SECTION ******/
-.projects-section{
-    position: relative;
-    height: 100vh;
-
-    .wrapper{
-
-        .projects-section-background-image{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 80vh;
-            z-index: -2;
-            background-image: url(../img/elodie-cottin-homepage.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            filter: opacity(0.4);
-        }
-
-        .projects-section-left-side, .projects-section-right-side{
-            display: flex;
-            height: 50vh;
-            flex-flow: row wrap;
-            width: 50%;
-            align-items: center;
-
-            .container{
-                width: 80%;
-            }
-            p{
-                font-size: 24px;
-            }
-        }
-    }
-
-}
-@media only screen  and (max-device-width : 1024px) {
-    .projects-section{
-        display: none;
-    }
-}
-
-/** PROJECTS SECTION - Left side**/
-.projects-section-left-side{
-    h2{
-        color: $link-color;
-        margin-bottom: 5%;
-    }
-    p{
-
-    }
 }
