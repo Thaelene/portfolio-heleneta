@@ -8,6 +8,12 @@ body{
     font-family: 'nexa-light';
     color: $primary-color;
     font-size: 2.4rem;
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        font-size: 1.8em;
+    }
 }
 a{
     text-decoration: none;
@@ -141,6 +147,13 @@ PROJECTS SECTION
         margin: 1em 0;
         height: 15em;
     }
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        margin: 1em 0;
+        height: 12em;
+    }
 }
 #homepage-illustrations{
     margin: 5rem 0;
@@ -164,6 +177,13 @@ PROJECTS SECTION
         margin: 1em 0;
         height: 22em;
     }
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        margin: 1em 0;
+        height: 8em;
+    }
 }
 #homepage-lab{
     margin: 5rem 0;
@@ -179,6 +199,13 @@ PROJECTS SECTION
     only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
         margin: 2em 0;
         height: 7em;
+    }
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        margin: 1em 0;
+        height: 12em;
     }
 }
 
@@ -217,6 +244,12 @@ PROJECTS SECTION
             @media only screen and (min-width:40.063em) and (max-width:64em){
                 padding-bottom: 1em;
             }
+
+            // Small screen max-width 481px
+            // such as large mobile
+            @media (max-width:30.063em){
+                padding-bottom: 0.7em;
+            }
         }
     }
 }
@@ -242,6 +275,14 @@ PROJECTS SECTION
     // such as Tablets
     @media only screen and (min-width:40.063em) and (max-width:64em){
         height: 20em;
+    }
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        height: 6em;
+        display: block;
+        margin: 1em 0;
     }
 
     .illustrations-thumbnails{
@@ -273,6 +314,13 @@ PROJECTS SECTION
         li{
             display: inline-block;
             padding-right: 5rem;
+
+            // Small screen max-width 481px
+            // such as large mobile
+            @media (max-width:30.063em){
+                padding-right: 0em;
+                padding-bottom: 1em;
+            }
         }
     }
 }
@@ -294,6 +342,12 @@ PROJECTS SECTION
         width: 54%;
         height: 44%;
     }
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        display: none;
+    }
 }
 
 // Lab section
@@ -306,7 +360,7 @@ PROJECTS SECTION
                 color: $link-color;
             }
             p{
-                font-size: 18px;
+                font-size: 1.8rem;
                 margin: 1.5rem 0;
 
                 // 4K responsive
@@ -318,6 +372,13 @@ PROJECTS SECTION
                 only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
                 only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
                     font-size: 0.5em;
+                }
+
+                // Small screen max-width 481px
+                // such as large mobile
+                @media (max-width:30.063em){
+                    font-size: 0.8em;
+                    margin: 0.5em 0;
                 }
             }
         }
@@ -361,23 +422,14 @@ footer{
     only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
         font-size: 0.5em;
     }
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        font-size: 0.8em;
+    }
 }
 
-
-// @media only screen  and (max-device-width : 667px) and (orientation : portrait){
-// }
-//
-//
-//     @media only screen  and (max-device-width : 1024px) {
-//
-//     }
-//
-//
-// }
-//
-// @media only screen  and (max-device-width : 667px) and (orientation : portrait){
-//
-// }
 
 /****** SCROLL ICON ******/
 .scroll-icon{
