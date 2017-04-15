@@ -1,3 +1,4 @@
+// Main fonts and colors
 @font-face {
     font-family: 'nexa-bold';
     src: url(../fonts/Nexa_Bold.otf);
@@ -11,22 +12,12 @@ $title-color: #DB0A5B;
 $primary-color: #7A797A;
 $link-color : #390318;
 
-//font styles
-.title{
-    font-family: 'nexa-bold';
-    font-size: 48px;
-    letter-spacing: 6px;
-    text-decoration: none;
+// Charlotte Domingos fonts
+@font-face {
+    font-family: 'walbaum';
+    src: url(../fonts/WalbaumMTStd-Regulard.otf);
 }
-
-.logo-title{
-    font-family: 'nexa-bold';
-    letter-spacing: 5.5px;
-    color: $link-color;
-    text-decoration: none;
-}
-@media only screen  and (max-device-width : 1024px) {
-    .logo-title{
-        letter-spacing: 1.5px;
-    }
+@font-face {
+    font-family: 'montserrat';
+    src: url(../fonts/Montserrat-Regular.otf);
 }

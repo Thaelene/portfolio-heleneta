@@ -23,15 +23,55 @@
 .visual-identity{
     h2{}
 
-    .visual-identity_typograph{
+    .visual-identity_typograph, .visual-identity_colors{
         display: flex;
         flex-direction: row;
-
-        .typograph-content{
-            width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem 0;
+    }
+    .visual-identity_colors{
+        height: 150px;
+    }
+    // Typograph section
+    .typograph-content{
+        width: 45%;
+    }
+    .typograph-titlefont, .typograph-textfont{
+        width: 20%;
+        line-height: normal;
+        p{
+            margin: inherit;
         }
-        .typograph-titlefont, .typograph-textfont{
-            width: 25%;
+    }
+    .typograph-titlefont{
+        font-family: 'walbaum';
+    }
+    .typograph-textfont{
+        font-family: 'montserrat';
+    }
+
+    // Colors section
+    .colors-content{
+        width: 65%;
+    }
+    .colors-palette{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 25%;
+        align-items: center;
+        height: 100%;
+
+        .colors-bg{
+            width: 40%;
+            height: 80%;
+            background: red;
+        }
+        .colors-title{
+            width: 40%;
+            height: 80%;
+            background: green;
         }
     }
 }
