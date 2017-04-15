@@ -1,0 +1,21 @@
+.project{
+    .project-content{
+        margin: 8rem 0 4rem 0;
+
+        .project-link{
+            margin: 0.5rem 0;
+            line-height: inherit;
+            a{
+                font-size: 1.8rem;
+            }
+        }
+
+    }
+    .project-mockup{
+        text-align: center;
+
+        img{
+            width: 50%;
+        }
+    }
+}
