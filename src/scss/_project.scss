@@ -19,3 +19,19 @@
         }
     }
 }
+
+.visual-identity{
+    h2{}
+
+    .visual-identity_typograph{
+        display: flex;
+        flex-direction: row;
+
+        .typograph-content{
+            width: 50%;
+        }
+        .typograph-titlefont, .typograph-textfont{
+            width: 25%;
+        }
+    }
+}
