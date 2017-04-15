@@ -71,7 +71,8 @@ gulp.task('styles', function () {
 gulp.task( 'javascript', function()
 {
     return gulp.src( [
-            './src/js/main.js'
+            './src/js/main.js',
+            './src/js/**/*.js'
         ] )
         .pipe(gulp_plumber({
             errorHandler: gulp_notify.onError("JS Error: <%= error.message %>")
@@ -113,6 +114,6 @@ gulp.task('html', function () {
 gulp.task( 'watch', function()
 {
     gulp.watch(config.src + 'scss/**/*.scss', [ 'sass' ] );
-    gulp.watch(config.src + 'js/*.js', [ 'javascript' ] );
+    gulp.watch([config.src + 'js/*.js', config.src + 'js/**/*.js'], [ 'javascript' ] );
     gulp.watch(config.src + '*.html', ['html']);
 } );
