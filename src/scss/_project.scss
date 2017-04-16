@@ -2,11 +2,28 @@
     .project-content{
         margin: 8rem 0 4rem 0;
 
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            margin: inherit;
+        }
+
         .project-link{
             margin: 0.5rem 0;
             line-height: inherit;
             a{
                 font-size: 1.8rem;
+
+                // 4K responsive
+                @media
+                only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+                only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+                only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+                only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+                only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+                only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+                font-size: 1em;
+                }
             }
         }
 
@@ -16,6 +33,12 @@
 
         img{
             width: 50%;
+
+            // Small screen max-width 481px
+            // such as large mobile
+            @media (max-width:30.063em){
+                width: 100%;
+            }
         }
     }
 }
@@ -28,16 +51,52 @@
         justify-content: space-between;
         align-items: center;
         margin: 3rem 0;
+
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            flex-direction: column;
+        }
     }
     .visual-identity_colors{
         height: 150px;
+
+        // 4K responsive
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+        only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+        only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+        height: 360px;
+        }
+
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            height: 300px;
+        }
     }
     // Typograph section
     .typograph-content{
         width: 45%;
+
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            width: 100%;
+        }
     }
     .typograph-titlefont, .typograph-textfont{
         width: 20%;
+
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            width: 100%;
+        }
+
         line-height: normal;
         p{
             margin: inherit;
@@ -53,6 +112,12 @@
     // Colors section
     .colors-content{
         width: 65%;
+
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            width: 100%;
+        }
     }
     .colors-palette{
         display: flex;
@@ -61,6 +126,12 @@
         width: 25%;
         align-items: center;
         height: 100%;
+
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            width: 100%;
+        }
 
         .colors-bg{
             width: 40%;
@@ -71,6 +142,12 @@
             &:hover{
                 transform: scaleX(1.3);
             }
+
+            // Small screen max-width 481px
+            // such as large mobile
+            @media (max-width:30.063em){
+                height: 100%;
+            }
         }
         .colors-title{
             width: 40%;
@@ -79,6 +156,12 @@
 
             &:hover{
                 transform: scaleX(1.3);
+            }
+
+            // Small screen max-width 481px
+            // such as large mobile
+            @media (max-width:30.063em){
+                height: 100%;
             }
         }
     }
@@ -99,7 +182,65 @@
     margin: 5rem 0;
     height: 40rem;
 
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+    height: 14em;
+    }
+
+    // Medium screen min-width 641px and max-width 1024px
+    // such as Tablets
+    @media only screen and (min-width:40.063em) and (max-width:64em){
+        margin: 1em 0;
+        height: 11em;
+    }
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        margin: 1em 0;
+        height: 8em;
+    }
+
+    .projects-wrapper{
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            height: inherit;
+        }
+    }
+
     .projects-thumbnails{
         background-image: url(../img/elodie-cottin-homepage.png);
+
+        // 4K responsive
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+        only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+        only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+        only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+        width: 48%;
+        height: 70%;
+        }
+
+        // Medium screen min-width 641px and max-width 1024px
+        // such as Tablets
+        @media only screen and (min-width:40.063em) and (max-width:64em){
+            width: 51%;
+            height: 56%;
+        }
+
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            display: none;
+        }
     }
 }
