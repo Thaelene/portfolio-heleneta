@@ -1,5 +1,5 @@
-.project{
-    .project-content{
+.project, .illustration{
+    .project-content, .illustration-content{
         margin: 8rem 0 4rem 0;
 
         // Small screen max-width 481px
@@ -264,8 +264,8 @@
 }
 
 // Views section
-.project-views{
-    .project-views-img{
+.project-views, .illustration-views{
+    .project-views-img, .illustration-views-img{
         img{
             width: 100%;
             margin: 2rem 0;
@@ -274,7 +274,7 @@
 }
 
 // Other projects
-.project-projects{
+.project-projects, .illustration-illustrations{
     margin: 5rem 0;
     height: 40rem;
 
@@ -340,5 +340,20 @@
     }
     .project-charlotte{
         background-image: url(../img/elodie-cottin-homepage.png);
+    }
+}
+
+/*******************
+
+ILLUSTRATION
+
+*******************/
+
+.illustration-illustrations{
+    .projects-thumbnails.scifi-mattepainting{
+        background-image: url(../img/sci-fi.png);
+    }
+    .projects-thumbnails.chinese-mandala{
+        background-image: url(../img/chinese-mandala.png);
     }
 }

@@ -29,7 +29,7 @@
     }
 }
 
-.hello-content, .project-content{
+.hello-content, .project-content, .illustration-content, .lab-content{
     margin: 8rem 0;
 
     // Small screen max-width 481px
@@ -42,7 +42,7 @@
     @media (max-width:23.438em){
         margin: 0.2em 0;
     }
-    
+
     h1{
         color: $title-color;
         font-size: 3.2rem;
