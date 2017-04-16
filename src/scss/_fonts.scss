@@ -37,3 +37,15 @@ $link-color : #390318;
     font-family: 'baskerville';
     src: url(../fonts/Baskerville.ttc);
 }
+
+// Tales from the loop fonts
+@font-face {
+    font-family: 'avant-garde';
+    src: url(../fonts/AvantGardeLT-Book.TTF);
+    font-weight: regular;
+}
+@font-face {
+    font-family: 'avant-garde';
+    src: url(../fonts/ITC-Avant-Garde-bold.otf);
+    font-weight: bold;
+}

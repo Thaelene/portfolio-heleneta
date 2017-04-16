@@ -174,6 +174,7 @@
 }
 
 // Edit fonts and colors of the visual identity
+// Charlotte Domingos
 .visual-identity.charlotte-domingos{
     .typograph-titlefont{
         font-family: 'walbaum';
@@ -194,6 +195,7 @@
         }
     }
 }
+// Discover mars
 .visual-identity.discover-mars{
     .visual-identity_typograph{
         flex-direction: column;
@@ -235,6 +237,28 @@
         }
         .colors-text{
             background: #343434;
+        }
+    }
+}
+// Tales from the loop
+.visual-identity.tales-from-the-loop{
+    .typograph-titlefont{
+        font-family: 'avant-garde';
+        font-weight: bold;
+    }
+    .typograph-textfont{
+        font-family: 'avant-garde';
+        font-weight: regular;
+    }
+    .colors-palette{
+        .colors-bg{
+            background: #a5c2fb;
+        }
+        .colors-title{
+            background: #ff7a37;
+        }
+        .colors-text{
+            background: #262930;
         }
     }
 }
