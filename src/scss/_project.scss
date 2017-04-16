@@ -216,7 +216,6 @@
     }
 
     .projects-thumbnails{
-        background-image: url(../img/elodie-cottin-homepage.png);
 
         // 4K responsive
         @media
@@ -242,5 +241,8 @@
         @media (max-width:30.063em){
             display: none;
         }
+    }
+    .project-charlotte{
+        background-image: url(../img/elodie-cottin-homepage.png);
     }
 }
