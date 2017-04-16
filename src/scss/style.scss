@@ -399,6 +399,23 @@ footer{
     font-size: 1.8rem;
     text-align: center;
 
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+        font-size: 0.5em;
+    }
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        font-size: 0.8em;
+    }
+
     p{
         margin: 1.5rem 0;
     }
@@ -425,23 +442,6 @@ footer{
     .credits{
         font-size: 1rem;
         font-family: 'nexa-light';
-    }
-
-    // 4K responsive
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
-    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
-        font-size: 0.5em;
-    }
-
-    // Small screen max-width 481px
-    // such as large mobile
-    @media (max-width:30.063em){
-        font-size: 0.8em;
     }
 }
 

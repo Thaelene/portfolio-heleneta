@@ -1,5 +1,16 @@
 header{
     padding: 2.8rem 0;
+
+    // 4K responsive
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+    only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+        padding: 1.6em 0;
+    }
     nav{
         display: flex;
         flex-direction: row;
@@ -13,6 +24,17 @@ header{
             letter-spacing: 0.2rem;
             font-family: 'nexa-bold';
             margin-right: auto;
+
+            // 4K responsive
+            @media
+            only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+            only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+            only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+            only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+            only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+            only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+                font-size: 1.5em;
+            }
         }
         ul{
             display: inline-block;
@@ -22,60 +44,35 @@ header{
                 padding-left: 5rem;
                 font-family: 'nexa-bold';
                 font-size: 2.4rem;
-            }
-        }
-    }
-}
 
-// 4K responsive
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
-only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
-only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+                // 4K responsive
+                @media
+                only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+                only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 120.063em),
+                only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 120.063em),
+                only screen and (        min-device-pixel-ratio: 2)      and (min-width: 120.063em),
+                only screen and (                min-resolution: 192dpi) and (min-width: 120.063em),
+                only screen and (                min-resolution: 2dppx)  and (min-width: 120.063em) {
+                    font-size: 1em;
+                }
 
-  header{
-      padding: 1.6em 0;
-      nav{
-          a.logo{
-              font-size: 1.5em;
-          }
-          ul{
-              li{
-                  font-size: 1em;
-              }
-          }
-      }
-    }
-}
-
-// Medium screen min-width 641px and max-width 1024px
-// such as Tablets
-@media only screen and (min-width:40.063em) and (max-width:64em){
-    header{
-        nav{
-            ul{
-                li{
+                // Medium screen min-width 641px and max-width 1024px
+                // such as Tablets
+                @media only screen and (min-width:40.063em) and (max-width:64em){
                     font-size: 0.8em;
                 }
-            }
-        }
-    }
-}
 
-// Small screen max-width 481px
-// such as large mobile
-@media (max-width:30.063em){
-    header{
-        nav{
-            ul{
-                li{
+                // Small screen max-width 481px
+                // such as large mobile
+                @media (max-width:30.063em){
                     font-size: 0.8em;
                     display: none;
                 }
-                li.hello{
+            }
+            li.hello{
+                // Small screen max-width 481px
+                // such as large mobile
+                @media (max-width:30.063em){
                     display: block;
                 }
             }

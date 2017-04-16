@@ -31,6 +31,18 @@
 
 .hello-content, .project-content{
     margin: 8rem 0;
+
+    // Small screen max-width 481px
+    // such as large mobile
+    @media (max-width:30.063em){
+        margin: 2em 0;
+    }
+    // Small screen max-width 375px
+    // such as small mobile like iphone 6 or samsung galaxy S5
+    @media (max-width:23.438em){
+        margin: 0.2em 0;
+    }
+    
     h1{
         color: $title-color;
         font-size: 3.2rem;
@@ -60,10 +72,6 @@
         line-height: 2.7rem;
         font-size: 1.8rem;
 
-        a{
-            line-height: normal;
-        }
-
         // 4K responsive
         @media
         only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 120.063em),
@@ -81,17 +89,10 @@
             font-size: 0.8em;
             line-height: 1.8em;
         }
-    }
 
-    // Small screen max-width 481px
-    // such as large mobile
-    @media (max-width:30.063em){
-        margin: 2em 0;
-    }
-    // Small screen max-width 375px
-    // such as small mobile like iphone 6 or samsung galaxy S5
-    @media (max-width:23.438em){
-        margin: 0.2em 0;
+        a{
+            line-height: normal;
+        }
     }
 }
 footer.hello-page{
