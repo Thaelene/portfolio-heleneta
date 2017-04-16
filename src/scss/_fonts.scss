@@ -21,3 +21,19 @@ $link-color : #390318;
     font-family: 'montserrat';
     src: url(../fonts/Montserrat-Regular.otf);
 }
+
+// Discover mars fonts
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Black.ttf);
+    font-weight: semi_bold;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: light;
+}
+@font-face {
+    font-family: 'baskerville';
+    src: url(../fonts/Baskerville.ttc);
+}

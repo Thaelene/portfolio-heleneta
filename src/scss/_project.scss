@@ -88,7 +88,7 @@
             width: 100%;
         }
     }
-    .typograph-titlefont, .typograph-textfont{
+    .typograph-titlefont, .typograph-textfont, .typograph-subtitlefont, .typograph-legendfont{
         width: 20%;
 
         // Small screen max-width 481px
@@ -102,16 +102,10 @@
             margin: inherit;
         }
     }
-    .typograph-titlefont{
-        font-family: 'walbaum';
-    }
-    .typograph-textfont{
-        font-family: 'montserrat';
-    }
 
     // Colors section
     .colors-content{
-        width: 65%;
+        width: 45%;
 
         // Small screen max-width 481px
         // such as large mobile
@@ -123,7 +117,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 25%;
+        width: 45%;
         align-items: center;
         height: 100%;
 
@@ -134,9 +128,8 @@
         }
 
         .colors-bg{
-            width: 40%;
+            width: 30%;
             height: 60%;
-            background: #1A1A1A;
             will-change: transform;
 
             &:hover{
@@ -150,9 +143,8 @@
             }
         }
         .colors-title{
-            width: 40%;
+            width: 30%;
             height: 60%;
-            background: #940516;
 
             &:hover{
                 transform: scaleX(1.3);
@@ -163,6 +155,86 @@
             @media (max-width:30.063em){
                 height: 100%;
             }
+        }
+        .colors-text{
+            width: 30%;
+            height: 60%;
+
+            &:hover{
+                transform: scaleX(1.3);
+            }
+
+            // Small screen max-width 481px
+            // such as large mobile
+            @media (max-width:30.063em){
+                height: 100%;
+            }
+        }
+    }
+}
+
+// Edit fonts and colors of the visual identity
+.visual-identity.charlotte-domingos{
+    .typograph-titlefont{
+        font-family: 'walbaum';
+    }
+    .typograph-textfont{
+        font-family: 'montserrat';
+    }
+
+    .colors-palette{
+        .colors-bg{
+            background: #1A1A1A;
+        }
+        .colors-title{
+            background: #940516;
+        }
+        .colors-text{
+            background: #F1F1F1;
+        }
+    }
+}
+.visual-identity.discover-mars{
+    .visual-identity_typograph{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .typograph-content{
+        width: 100%;
+    }
+    .typograph-fonts{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .typograph-titlefont{
+        font-family: 'baskerville';
+    }
+    .typograph-subtitlefont{
+        font-family: 'roboto';
+        font-weight: semi_bold;
+    }
+    .typograph-textfont{
+        font-family: 'roboto';
+        font-weight: light;
+    }
+    .typograph-legendfont{
+        font-family: 'roboto';
+        font-weight: light;
+        font-style: italic;
+    }
+
+    .colors-palette{
+        .colors-bg{
+            background: #020416;
+        }
+        .colors-title{
+            background: #F19611;
+        }
+        .colors-text{
+            background: #343434;
         }
     }
 }
