@@ -87,7 +87,10 @@ gulp.task( 'javascript', function()
 // Minifies images
 gulp.task('imagemin', function()
 {
-    return gulp.src(config.src + 'img/*')
+    return gulp.src( [
+        config.src + 'img/*',
+        config.src + 'img/videoplayer/*'
+    ])
         .pipe(gulp_imagmin())
         .pipe(gulp.dest(config.assets + 'img'))
         .pipe(gulp_connect.reload())
