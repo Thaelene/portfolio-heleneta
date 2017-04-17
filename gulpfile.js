@@ -84,13 +84,23 @@ gulp.task( 'javascript', function()
         .pipe( gulp.dest(config.assets + 'js' ) );
 } );
 
+// Uglifies external js from section lab
+gulp.task( 'ext-javascript', function()
+{
+    return gulp.src('./src/js/lab/*.js')
+        .pipe(gulp_plumber({
+            errorHandler: gulp_notify.onError("JS Error: <%= error.message %>")
+        }))
+        .pipe(gulp_sourcemaps.init())
+        .pipe( gulp_uglify() )
+        .pipe(gulp_sourcemaps.write())
+        .pipe( gulp.dest(config.assets + 'js/lab' ) );
+} );
+
 // Minifies images
 gulp.task('imagemin', function()
 {
-    return gulp.src( [
-        config.src + 'img/*',
-        config.src + 'img/videoplayer/*'
-    ])
+    return gulp.src(config.src + 'img/*')
         .pipe(gulp_imagmin())
         .pipe(gulp.dest(config.assets + 'img'))
         .pipe(gulp_connect.reload())
