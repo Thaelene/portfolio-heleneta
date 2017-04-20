@@ -136,6 +136,12 @@
             p{
                 margin: inherit;
                 font-size: 1.5rem;
+
+                // Small screen max-width 481px
+                // such as large mobile
+                @media (max-width:30.063em){
+                    display: none;
+                }
             }
         }
 
@@ -264,6 +270,13 @@
     .typograph-textfont{
         font-family: 'avant-garde';
         font-weight: regular;
+    }
+    .visual-identity_colors{
+        // Small screen max-width 481px
+        // such as large mobile
+        @media (max-width:30.063em){
+            height: 250px;
+        }
     }
     .colors-palette{
         .colors-bg{
