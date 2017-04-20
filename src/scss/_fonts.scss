@@ -7,10 +7,20 @@
     font-family: 'nexa-light';
     src: url(../fonts/Nexa_Light.otf);
 }
-
+// Colors
 $title-color: #DB0A5B;
 $primary-color: #7A797A;
 $link-color : #390318;
+
+// Text style
+p::selection, span::selection, h1::selection, h2::selection {
+    background: $title-color;
+    color: white;
+}
+p::-moz-selection, span::selection, h1::selection, h2::selection{
+    background: $title-color;
+    color: white;
+}
 
 // Charlotte Domingos fonts
 @font-face {

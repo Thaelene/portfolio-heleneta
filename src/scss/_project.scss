@@ -127,13 +127,25 @@
             width: 100%;
         }
 
+        .colors-bg, .colors-title, .colors-text{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+
+            p{
+                margin: inherit;
+                font-size: 1.5rem;
+            }
+        }
+
         .colors-bg{
             width: 30%;
             height: 60%;
             will-change: transform;
 
             &:hover{
-                transform: scaleX(1.3);
+                transform: scale(1.3);
             }
 
             // Small screen max-width 481px
@@ -148,7 +160,7 @@
             height: 60%;
 
             &:hover{
-                transform: scaleX(1.3);
+                transform: scale(1.3);
             }
 
             // Small screen max-width 481px
@@ -163,7 +175,7 @@
             height: 60%;
 
             &:hover{
-                transform: scaleX(1.3);
+                transform: scale(1.3);
             }
 
             // Small screen max-width 481px
