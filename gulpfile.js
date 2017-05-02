@@ -116,7 +116,7 @@ gulp.task('connect', function() {
   });
 });
 
-// Autoreload task
+// Html move to dist + Autoreload task
 gulp.task('html', function () {
   return gulp.src(config.src + '*.html')
   .pipe(gulp.dest(config.dist))
