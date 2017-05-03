@@ -40,9 +40,4 @@ IllustrationThumbnail.prototype.change_thumbnail = function (e)
     {
         this.illustrations.thumbnail.style.backgroundImage = "url(assets/img/chinese-mandala.png)";
     }
-
-    else if (illustration_name === 'mattepainting')
-    {
-        this.illustrations.thumbnail.style.backgroundImage = "url(assets/img/sci-fi.png)";
-    }
 };
